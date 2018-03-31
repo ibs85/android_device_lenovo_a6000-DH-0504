@@ -13,11 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common A6000 stuff.
-$(call inherit-product, device/lenovo/a6000/full_a6000.mk)
+# Include pure telephony configuration
+include vendor/pure/configs/pure_phone.mk
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, device/lenovo/a6000/full_a6000.mk)
+$(call inherit-product, device/lenovo/a6000/device.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
