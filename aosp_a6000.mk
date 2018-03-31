@@ -13,6 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit some common A6000 stuff.
 $(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 
 # Inherit some common LineageOS stuff.
@@ -27,7 +28,6 @@ TARGET_OTA_ASSERT_DEVICE := Kraft-T,a6000,K30-T,A6000,Kraft-W,Kraft-C,k30t,msm89
 PRODUCT_NAME := aosp_a6000
 BOARD_VENDOR := Lenovo
 TARGET_BOOT_ANIMATION_RES := 720
-EXTENDED_BUILD_TYPE := OFFICIAL
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
